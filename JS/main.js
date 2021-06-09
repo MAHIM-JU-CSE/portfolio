@@ -92,7 +92,7 @@ modalCloses.forEach((modalClose) => {
 /* --------portfolio------- */
 
 let swiperPortfolio = new Swiper(".portfolio__container", {
-  cssMode: true, 
+  cssMode: true,
   loop: true,
   /* grabCursor:true, */
 
@@ -206,24 +206,39 @@ themeButton.addEventListener("click", () => {
 });
 
 /* -----Typing Style------ */
-var typed = new Typed(".typing",{
+var typed = new Typed(".typing", {
   strings: ["Full Stack Developer", "Software Developer", "Tourist"],
   typeSpeed: 100,
   backSpeed: 100,
   loop: true,
-})
+});
 
-
-
+/*----- Contact Submit popup------ */
 function thanku() {
   let username = document.getElementById("name").value;
   let mail = document.getElementById("email").value;
   if (username != "" && mail != "") {
     swal({
       title: "Thank You!",
-      text: "Your message has been sent succefully. I'll contact you shortly.",
+      text: "Your message has been sent successfully. You will be contacted as soon as possible.",
       icon: "success",
       button: "OK",
     });
   }
+}
+
+/* ----- Contact mail send-----*/
+
+function sendMail(params) {
+  var tempParams = {
+    from_name: document.getElementById("name").value,
+    subject: document.getElementById("subject").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs.send('service_x4bf8m8','template_mralvne',tempParams)
+  .then(function(res){
+    console.log("success",res.status);
+  })
 }
