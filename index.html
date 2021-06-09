@@ -17,6 +17,15 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_udK235SAl9Ya2YrauCIrd");
+      })();
+    </script>
   </head>
 
   <body>
@@ -899,7 +908,7 @@
           </div>
 
           <form
-            action="PHP/contact.php"
+
             method="post"
             class="contact__form grid"
           >
@@ -956,7 +965,7 @@
                 name="submit"
                 id="submit"
                 style="border: none; color: white"
-                onclick="thanku();"
+                onclick="thanku();sendMail();"
               >
                 Send Message <i class="uil uil-message button__icon"></i>
               </button>
@@ -1025,7 +1034,5 @@
     <!--  Js Code -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="JS/main.js"></script>
-
-    <!-- Contact Submit popup -->
   </body>
 </html>
