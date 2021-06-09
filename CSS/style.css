@@ -256,7 +256,7 @@ img {
 /*--- Home---- */
 .home__container {
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .home__content {
   grid-template-columns: 0.5fr 3fr;
