@@ -242,3 +242,51 @@ function sendMail(params) {
     console.log("success",res.status);
   })
 }
+
+
+/* ---------Scroll reveal animation-------- */
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '70px',
+  duration: 1200,
+  reset: true
+});
+
+/*SCROLL HOME*/
+/* sr.reveal('.section',{});  */
+sr.reveal('.home__title',{}); 
+sr.reveal('.button',{delay: 200}); 
+sr.reveal('.home__description',{delay: 300}); 
+sr.reveal('.home__scroll',{delay: 400});
+sr.reveal('.home__img',{delay: 400}); 
+sr.reveal('.home__social-icon',{ interval: 200}); 
+
+/*SCROLL ABOUT*/
+sr.reveal('.about__img',{}); 
+sr.reveal('.about__subtitle',{delay: 400}); 
+sr.reveal('.about__text',{delay: 400}); 
+sr.reveal('.about__description',{delay: 400}); 
+sr.reveal('.about__info',{delay: 400}); 
+/*SCROLL SKILLS*/
+sr.reveal('.skills__subtitle',{interval: 200}); 
+sr.reveal('.skills__title',{}); 
+sr.reveal('.skills__data',{interval: 100}); 
+
+sr.reveal('.qualification',{delay: 400}); 
+
+
+sr.reveal('.section__title',{}); 
+sr.reveal('.section__subtitle',{interval: 400}); 
+sr.reveal('.services__content',{interval: 200}); 
+sr.reveal('.portfolio',{interval: 300}); 
+sr.reveal('.project__data',{interval: 400}); 
+sr.reveal('.project__img',{interval: 200}); 
+sr.reveal('.testimonial',{interval: 400}); 
+sr.reveal('.contact__title',{interval: 200}); 
+sr.reveal('.contact__subtitle',{interval: 200}); 
+sr.reveal('.work__img',{interval: 200}); 
+
+
+/*SCROLL CONTACT*/
+sr.reveal('.contact__input',{interval: 200}); 
