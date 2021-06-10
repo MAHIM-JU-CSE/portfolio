@@ -254,7 +254,7 @@ const sr = ScrollReveal({
 });
 
 
-sr.reveal('.section',{});  
+/*sr.reveal('.section',{});  */
 sr.reveal('.home__social-icon',{ interval: 200});   
 
 
