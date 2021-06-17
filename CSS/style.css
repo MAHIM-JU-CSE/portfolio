@@ -7,7 +7,7 @@
   /*--- Colors--- */
 
   --header-height: 3rem;
-  --hue-color: 222;
+  --hue-color: 200;
 
   /* ------HSL color mode------ */
   --first-color: hsl(var(--hue-color), 81%, 61%);
@@ -108,7 +108,7 @@ body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background-color:var(--body-color);
   color: var(--text-color);
 }
 
@@ -152,6 +152,7 @@ img {
   max-width: 768px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
+  
 }
 
 .grid {
@@ -256,7 +257,7 @@ img {
 /*--- Home---- */
 .home__container {
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .home__content {
   grid-template-columns: 0.5fr 3fr;
